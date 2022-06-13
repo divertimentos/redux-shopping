@@ -14,7 +14,7 @@ export const Wrapper = styled.header`
   display: flex;
   align-items: center;
   
-  padding: 0 32px;
+  padding: 0 20px;
 
   span {
     font-weight: 700;

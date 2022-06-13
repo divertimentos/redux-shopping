@@ -1,9 +1,9 @@
 import React from 'react'
 import { Wrapper } from './AppHeader.styles'
 
-function AppHeader () {
+function AppHeader() {
   return <Wrapper>
-    alga
+    Redux
     <span>
       Shopping
     </span>
