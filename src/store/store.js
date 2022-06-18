@@ -1,12 +1,12 @@
-import { createStore, combineReducers } from 'redux';
-import calculatorReducer from './Calculator/Calculator.reducer'
-import productsReducer from './Products/Products.reducer'
+import { createStore, combineReducers } from "redux";
+import calculatorReducer from "./Calculator/Calculator.reducer";
+import productsReducer from "./Products/Products.reducer";
 
 const rootReducer = combineReducers({
   calculator: calculatorReducer,
-  products: productsReducer
-})
+  products: productsReducer,
+});
 
-const store = createStore(rootReducer)
+const store = createStore(rootReducer);
 
 export default store;

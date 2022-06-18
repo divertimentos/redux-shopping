@@ -1,13 +1,13 @@
 export function sum(a, b) {
   return {
-    type: 'SUM',
-    payload: [a, b]
-  }
+    type: "SUM",
+    payload: [a, b],
+  };
 }
 
 export function subtract(a, b) {
   return {
-    type: 'SUBTRACT',
-    payload: [a, b]
-  }
+    type: "SUBTRACT",
+    payload: [a, b],
+  };
 }

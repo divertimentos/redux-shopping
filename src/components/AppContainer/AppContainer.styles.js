@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Wrapper = styled.main`
   display: grid;
@@ -6,4 +6,4 @@ export const Wrapper = styled.main`
   grid-column-gap: 24px;
 
   padding: 24px;
-`
+`;

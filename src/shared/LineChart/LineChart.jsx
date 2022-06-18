@@ -1,10 +1,10 @@
 import React from 'react'
 import { Wrapper, ProgressBar } from './LineChart.styles'
 
-function LineChart ({ title, percentage, color }) {
+function LineChart({ title, percentage, color }) {
   return <Wrapper>
     <span>
-      { title }:
+      {title}:
     </span>
     <ProgressBar
       color={color}

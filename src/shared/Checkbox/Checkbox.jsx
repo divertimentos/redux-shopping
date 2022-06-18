@@ -1,10 +1,10 @@
 import React from 'react'
 import { Indicator, Wrapper } from './Checkbox.styles'
 
-function Checkbox ({ value, title, onClick }) {
+function Checkbox({ value, title, onClick }) {
   return <Wrapper onClick={onClick}>
     <Indicator value={value} />
-    { title }
+    {title}
   </Wrapper>
 }
 

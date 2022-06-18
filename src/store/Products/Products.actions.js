@@ -1,13 +1,13 @@
-export default function(state, action) {
+export default function (state, action) {
   switch (action.type) {
     default:
-      return state
+      return state;
   }
 }
 
 export function toggleProduct(id) {
   return {
-    type: 'TOGGLE_PRODUCT',
-    payload: id
-  }
+    type: "TOGGLE_PRODUCT",
+    payload: id,
+  };
 }
