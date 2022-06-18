@@ -1,0 +1,84 @@
+{
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+    // "plugin:sonarjs/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "prettier", "sonarjs"],
+  "globals": {
+    "Printl": true,
+    "StaticData": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/eslint/alias.js"
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/display-name": 0,
+    "camelcase": 0,
+    "arrow-parens": 0,
+    "import/no-unresolved": 0,
+    "jsx-a11y/aria-props": 2,
+    "jsx-a11y/mouse-events-have-key-events": 2,
+    "jsx-a11y/role-has-required-aria-props": 2,
+    "jsx-a11y/role-supports-aria-props": 2,
+    "no-console": 1,
+    "no-unused-vars": 2,
+    "prefer-template": 2,
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-uses-vars": 2,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "arrow-body-style": [2, "as-needed"],
+    "react/require-default-props": [0],
+    "no-underscore-dangle": 0,
+    "no-prototype-builtins": 0,
+    "react/jsx-fragments": [0],
+    "react/static-property-placement": [2, "static public field"],
+    "react/state-in-constructor": [0],
+    "react/jsx-props-no-spreading": [0],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "react/jsx-no-bind": 0
+  }
+}

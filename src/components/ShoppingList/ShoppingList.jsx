@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Wrapper, Title, Array } from './ShoppingList.styles'
 import Checkbox from '../../shared/Checkbox'
+import { selectAllProducts } from '../../store/Products/Products.selectors'
+import { useSelector } from 'react-redux'
 
-function ShoppingList ({ title, products, onToggle }) {
+function ShoppingList({ title, products, onToggle }) {
+
+  const productsFromRedux = useSelector(selectAllProducts)
+
+  useEffect(() => {
+    console.log("Redux:")
+    console.dir(productsFromRedux)
+    console.log("Prop:")
+    console.table(products)
+  }, [productsFromRedux, products])
+
   return <Wrapper>
     <Title>
-      { title }:
+      {title}:
     </Title>
     <Array>
       {
